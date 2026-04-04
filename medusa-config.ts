@@ -47,6 +47,11 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
+            resolve: '@medusajs/medusa/auth-emailpass',
+            id: 'emailpass',
+            options: {},
+          },
+          {
             resolve: './src/modules/firebase-auth',
             id: 'firebase',
             options: {
